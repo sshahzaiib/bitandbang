@@ -1,47 +1,20 @@
 {
   "name": "shahzaib",
-  "version": "1.6.0",
-  "description": "A personal card for Shahzaib (@sshahzaiib)",
-  "main": "/bin/card.js",
+  "version": "1.0.9",
+  "description": "",
+  "main": "card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "shahzaib": "./bin/card.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sshahzaiib/bitandbang.git"
-  },
-  "homepage": "https://shahzaib.netlify.app",
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "node build.js",
-    "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm version patch && npm publish"
   },
-  "keywords": [
-    "card",
-    "npm",
-    "npm card",
-    "npx",
-    "npx card",
-    "business card"
-  ],
-  "author": "Shahzaib <shahza1b@hotmail.com> (http://shahzaib.netlify.app)",
-  "license": "MIT",
-  "files": [
-    "bin/card.js",
-    "bin/output"
-  ],
-  "devDependencies": {
+  "dependencies": {
     "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "chalk": "^2.4.1"
   },
-  "bugs": {
-    "url": "https://github.com/sshahzaiib/bitandbang/issues"
-  },
-  "dependencies": {},
-  "publishConfig": {
-    "registry": "https://npm.registry.github.com/"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

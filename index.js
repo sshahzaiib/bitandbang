@@ -15,7 +15,22 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Shahzaib A.'),
+        name: chalk.white(`                                                                                                    
+          ,dPYb,                 ,dPYb,                                  ,dPYb,     
+          IP''Yb                 IP''Yb                                  IP''Yb     
+          I8  8I                 I8  8I                             gg   I8  8I     
+          I8  8'                 I8  8'                             ""   I8  8'     
+  ,g,     I8 dPgg,     ,gggg,gg  I8 dPgg,      ,gggg,    ,gggg,gg   gg   I8 dP      
+ ,8'8,    I8dP" "8I   dP"  "Y8I  I8dP" "8I    d8"  Yb   dP"  "Y8I   88   I8dP   88gg
+,8'  Yb   I8P    I8  i8'    ,8I  I8P    I8   dP    dP  i8'    ,8I   88   I8P    8I  
+,8'_   8) ,d8     I8,,d8,   ,d8b,,d8     I8,,dP  ,adP' ,d8,   ,d8b,_,88,_,d8b,  ,8I  
+P' "YY8P8P88P     'Y8P"Y8888P"'Y888P     'Y88"   ""Y8d8P"Y8888P"'Y88P""Y88P'"Y88P"'  
+                                         ,d8I'                              
+                                       ,dP'8I                               
+                                      ,8"  8I                               
+                                      I8   8I                               
+                                      '8, ,8I                               
+                                       'Y8P"                                `),
   handle: chalk.white('sshahzaiib'),
   work: chalk.white('Senior Javascript Developer at Appcrates'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('sshahzaiib'),
@@ -56,4 +71,5 @@ const output = heading + // data.name + data.handle
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
 
+// console.log(chalk.green(boxen(output, options)))
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
